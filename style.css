@@ -62,3 +62,12 @@ body {
 .certificate-btn:hover {
     background: yellow;
 }
+
+/* Fix Image Size */
+.resize-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px; /* Round Corners */
+}
