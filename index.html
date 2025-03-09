@@ -2,18 +2,27 @@
 <html lang="hi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Happy Holi</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
+    <!-- Welcome Animation -->
     <div class="welcome">
         <h1 id="welcome-text">आपका स्वागत है</h1>
-        <img src="your-photo.jpg" class="holi-frame" alt="VIP Holi Frame">
-        <a href="holi.html" class="btn">CLICK HERE</a>
     </div>
 
-    <script src="script.js"></script>
+    <!-- Profile Photo -->
+    <div class="profile-container">
+        <img src="profile.jpg" alt="Profile Photo">
+    </div>
+
+    <!-- Click Here Button -->
+    <div class="button-container">
+        <button onclick="goToHoliPage()">CLICK HERE</button>
+    </div>
+
 </body>
 </html>

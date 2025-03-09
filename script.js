@@ -1,17 +1,17 @@
-// Play Fireworks Sound
-function showFireworks() {
-    alert("🎆 Fireworks Start! 🎆");
-    let fireworksAudio = new Audio('fireworks.mp3');
-    fireworksAudio.loop = true; // 🔥 Fireworks sound loop karega
-    fireworksAudio.play();
+function goToHoliPage() {
+    window.location.href = "holi-page.html";
 }
 
-// Toggle Menu
-function toggleMenu() {
-    let menu = document.getElementById('dropdown');
-    if (menu.style.display === "none" || menu.style.display === "") {
-        menu.style.display = "block";
-    } else {
-        menu.style.display = "none";
-    }
+function showFireworks() {
+    alert("🎆🎇 पटाखे फूट रहे हैं! 🎇🎆");
+    let audio = new Audio("fireworks.mp3");
+    audio.play();
+}
+
+function playHoliSong() {
+    document.getElementById("holiSong").play();
+}
+
+function openWhatsApp() {
+    window.location.href = "https://wa.me/9569739986";
 }

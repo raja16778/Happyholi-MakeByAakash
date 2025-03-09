@@ -3,57 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>🎉 HAPPY HOLI 🎉</title>
+    <title>Holi Celebration</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-<body>
+<body onload="playHoliSong()">
 
-    <!-- 🎉 HAPPY HOLI 🎉 Banner + Menu -->
+    <!-- 🎉 Happy Holi Banner -->
     <div class="banner">
-        <h1>🎉 HAPPY HOLI 🎉</h1>
-        <div class="menu" onclick="toggleMenu()">☰</div>
-        <div class="dropdown" id="dropdown">
-            <h3>WEB OWNER</h3>
-            <a href="https://wa.me/9569739986" target="_blank">WhatsApp Me</a>
-        </div>
+        🎉 HAPPY HOLI 🎉
+        <div class="menu" onclick="openWhatsApp()">☰</div>
     </div>
 
-    <!-- Holi Photos + Shayari -->
-    <div class="container">
-        <div class="photo-box">
-            <img src="photo1.jpg" alt="Holi Pic 1">
-            <div class="shayari">रंगों से भरी इस दुनिया में,<br> प्यार से भरी हो हर गली,<br> होली की मस्ती में झूम उठो,<br> आओ साथ मनाएं ये खुशी!</div>
-        </div>
-
-        <div class="photo-box">
-            <img src="photo2.jpg" alt="Holi Pic 2">
-            <div class="shayari">गुलाल का रंग, बिखर रहा संग,<br> दोस्तों संग होली मनाएं,<br> हर रंग में खुशबू हो प्यार की,<br> होली के रंग में खो जाएं!</div>
-        </div>
-
-        <div class="photo-box">
-            <img src="photo3.jpg" alt="Holi Pic 3">
-            <div class="shayari">फागुन की मस्ती, होली की बहार,<br> हर गली में बिखरे रंग हजार,<br> आओ खुशी से खेलें हम,<br> रंगों से रंगीन हो हर द्वार!</div>
-        </div>
-
-        <div class="photo-box">
-            <img src="photo4.jpg" alt="Holi Pic 4">
-            <div class="shayari">रंगों की बरसात में भीग जाएं हम,<br> प्यार की खुशबू से महक जाएं हम,<br> गुलाल उड़ाएं, मस्ती करें,<br> होली की धूम में झूम जाएं हम!</div>
-        </div>
-
-        <div class="photo-box">
-            <img src="photo5.jpg" alt="Holi Pic 5">
-            <div class="shayari">अबीर गुलाल उड़ा लो हवा में,<br> झूमो नाचो इस फिज़ा में,<br> होली के रंग में रंग जाओ,<br> खुशी से दुनिया को झुका दो!</div>
-        </div>
-
-        <!-- Certificate Button -->
-        <button class="certificate-btn" onclick="showFireworks()">CLICK TO CERTIFICATE</button>
+    <!-- VIP Holi Frames with Photos -->
+    <div class="photo-gallery">
+        <div class="photo-box"><img src="photo1.jpg"><p class="shayari">गुलाल का रंग, मिठाइयों की मिठास,<br>खुशियों की हो भरमार,<br>होली का दिन आए साथ,<br>रंगों से भर दे संसार।</p></div>
+        <div class="photo-box"><img src="photo2.jpg"><p class="shayari">रंगों में घुली शाम हो,<br>मस्ती में झूमता हर इंसान हो,<br>गिले-शिकवे भूल कर,<br>होली का त्यौहार खास हो।</p></div>
+        <div class="photo-box"><img src="photo3.jpg"><p class="shayari">अबकी बार होली ऐसी मनाएंगे,<br>हर तरफ प्यार के रंग बरसाएंगे,<br>मौका है, दस्तूर भी है,<br>आओ मिलकर खुशियां लुटाएं।</p></div>
+        <div class="photo-box"><img src="photo4.jpg"><p class="shayari">रंग बिरंगी पिचकारियाँ,<br>रंग बिरंगे चेहरे,<br>मिलकर गाएं ये गाना,<br>होली मुबारक मेरे यार।</p></div>
+        <div class="photo-box"><img src="photo5.jpg"><p class="shayari">रंगों से भरी दुनिया में,<br>मुस्कानों की हो बौछार,<br>सबके जीवन में खुशियां आएं,<br>होली का हो ये उपहार।</p></div>
     </div>
 
-    <!-- 🎶 Auto Play Holi Song -->
-    <audio id="holiSong" autoplay loop>
+    <!-- CLICK TO CERTIFICATE Button -->
+    <button class="certificate-btn" onclick="showFireworks()">CLICK TO CERTIFICATE</button>
+
+    <!-- Background Song -->
+    <audio id="holiSong" loop>
         <source src="holi.mp3" type="audio/mp3">
     </audio>
 
-    <script src="script.js"></script>
 </body>
 </html>
