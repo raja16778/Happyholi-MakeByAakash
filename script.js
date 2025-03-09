@@ -1,7 +1,10 @@
-let fireworkAudio = new Audio("firework-sound.mp3");
-fireworkAudio.loop = true; 
+window.onload = function() {
+    let song = new Audio('holi-song.mp3');
+    song.loop = true;
+    song.play();
+};
 
-function startFireworks() {
-    alert("🔥 पटाखे फूट रहे हैं! होली मुबारक! 🎆");
-    fireworkAudio.play();
+function fireworkEffect() {
+    let sound = new Audio('firework-sound.mp3');
+    sound.play();
 }
