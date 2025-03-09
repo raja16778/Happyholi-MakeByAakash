@@ -1,9 +1,9 @@
-// Fireworks Effect
+// Play Fireworks Sound
 function showFireworks() {
     alert("🎆 Fireworks Start! 🎆");
-    let audio = new Audio('fireworks.mp3');
-    audio.loop = true; // 🔥 Fireworks sound loop karega
-    audio.play();
+    let fireworksAudio = new Audio('fireworks.mp3');
+    fireworksAudio.loop = true; // 🔥 Fireworks sound loop karega
+    fireworksAudio.play();
 }
 
 // Toggle Menu

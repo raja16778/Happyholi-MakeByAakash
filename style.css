@@ -23,49 +23,66 @@ meta[name="viewport"] {
     100% { background: purple; }
 }
 
+/* Banner */
+.banner {
+    position: relative;
+    padding: 20px;
+    color: white;
+    font-size: 28px;
+}
+
 /* Three-Line Menu */
 .menu {
     position: absolute;
     top: 10px;
     right: 20px;
-    font-size: 24px;
+    font-size: 30px;
     cursor: pointer;
 }
 
-/* Dropdown Fix */
+/* Dropdown Menu */
 .dropdown {
     display: none;
     position: absolute;
-    top: 40px;
+    top: 50px;
     right: 10px;
     background: white;
     padding: 10px;
     border-radius: 5px;
+    box-shadow: 0px 0px 10px gray;
 }
 
-/* Mobile View Fix */
-@media (max-width: 600px) {
-    .banner h1 {
-        font-size: 22px;
-    }
+/* Shayari Box Animation */
+.shayari {
+    background: black;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    animation: djLights 1s infinite alternate;
+}
 
-    .shayari {
-        font-size: 16px;
-    }
+/* DJ Light Effect */
+@keyframes djLights {
+    0% { background: red; }
+    25% { background: blue; }
+    50% { background: yellow; }
+    75% { background: green; }
+    100% { background: purple; }
 }
 
 /* Certificate Button */
 .certificate-btn {
     display: block;
-    width: 200px;
+    width: 220px;
     margin: 20px auto;
     padding: 10px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     color: white;
     background: linear-gradient(45deg, blue, green);
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    animation: djLights 1s infinite alternate;
 }
