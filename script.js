@@ -1,10 +1,7 @@
-window.onload = function() {
-    let song = new Audio('holi-song.mp3');
-    song.loop = true;
-    song.play();
-};
-
-function fireworkEffect() {
-    let sound = new Audio('firework-sound.mp3');
-    sound.play();
+// Fireworks Effect
+function showFireworks() {
+    alert("🎆 Fireworks Start! 🎆");
+    let audio = new Audio('fireworks.mp3');
+    audio.loop = true; // 🔥 Fireworks sound loop karega
+    audio.play();
 }

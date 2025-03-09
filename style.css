@@ -18,10 +18,11 @@ body {
 }
 
 /* Responsive Fix */
-.welcome, .gallery {
-    width: 90%;
+.container {
+    width: 100%;
     max-width: 600px;
     margin: auto;
+    padding: 10px;
 }
 
 /* Holi Photos Fix */
@@ -67,4 +68,20 @@ body {
     .shayari {
         font-size: 16px;
     }
+}
+
+/* Certificate Button */
+.certificate-btn {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg, blue, green);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: djLights 1s infinite alternate;
 }
