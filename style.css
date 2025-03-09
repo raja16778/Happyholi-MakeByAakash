@@ -71,3 +71,23 @@ body {
     object-fit: cover;
     border-radius: 10px; /* Round Corners */
 }
+
+/* 🎨 Animated Background */
+@keyframes bg-animation {
+    0% { background-color: #ff0000; }
+    25% { background-color: #ff7300; }
+    50% { background-color: #ffeb00; }
+    75% { background-color: #00ff08; }
+    100% { background-color: #ff0000; }
+}
+
+body {
+    animation: bg-animation 5s infinite alternate;
+}
+
+/* 📌 Move Menu to Left */
+.menu-icon {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
